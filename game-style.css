@@ -9,11 +9,13 @@ body {
 }
 
 .screen {
+    position: relative;
     width: 1060px;
     height: 740px;
     background-color: #ffff;
     border: 2px solid #333;
     margin: 50px auto;
+    overflow: hidden;
 
     .battleground {
         width: 100%;
@@ -22,12 +24,39 @@ body {
 
     .poke1 {
         position: absolute;
-        bottom: 200px;
-        left: 400px;
+        bottom: 0;
+        left: 70px;
+        width: 420px;
+        animation: idle-animation1 0.7s infinite alternate;
     }
 
     .poke2 {
         position: absolute;
-        left: 200px;
+        top: 80px;
+        left: 470px;
+        width: 520px;
+        animation: idle-animation2 0.7s infinite alternate;
+    }
+}
+
+@keyframes idle-animation1 {
+
+    from {
+        bottom: -7px;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes idle-animation2 {
+
+    from {
+        top: 73px;
+    }
+
+    to {
+        top: 80px;
     }
 }
