@@ -8,6 +8,7 @@ body {
     background-color: #333;
 }
 
+/* TELA */
 .screen {
     position: relative;
     width: 1060px;
@@ -37,6 +38,14 @@ body {
         width: 520px;
         animation: idle-animation2 0.7s infinite alternate;
     }
+}
+
+/* TEXTBOX */
+#bttextbox {
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    left: 50%;
 }
 
 @keyframes idle-animation1 {
